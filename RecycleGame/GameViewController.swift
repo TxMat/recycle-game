@@ -8,6 +8,8 @@
 import UIKit
 
 class GameViewController: UIViewController {
+    
+    var sorted: Int = 0;
 
     @IBOutlet var bin_list: [UIImageView]!
     
@@ -58,6 +60,12 @@ class GameViewController: UIViewController {
         }
     }
     
+    func win_alert() {
+        let alert = UIAlertController(title: "Congratulation !", message: "You sorted everything correclty", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
         guard let touch = touches.first else { return }
@@ -66,6 +74,10 @@ class GameViewController: UIViewController {
                 if bin.frame.contains(touch.preciseLocation(in: bin.superview)) {
                     if bin.tag == waste.tag {
                         waste.isHidden = true
+                        sorted = sorted + 1
+                        if sorted == waste_list.count {
+                            win_alert()
+                        }
                     } else {
                         waste.center = init_pos
                     }
