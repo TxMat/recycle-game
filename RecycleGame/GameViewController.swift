@@ -16,6 +16,7 @@ class GameViewController: UIViewController {
     var selected_waste: UIImageView?
     
     var previous_pos: CGPoint = .zero
+    var init_pos: CGPoint = .zero
     
     
     override func viewDidLoad() {
@@ -29,8 +30,9 @@ class GameViewController: UIViewController {
         for waste in waste_list {
             if waste.frame.contains(touch.preciseLocation(in: waste.superview)) {
                 selected_waste = waste
+//                waste.superview?.bringSubviewToFront(self.view)
                 previous_pos = touch.location(in: self.view)
-                print("Selected Waste : \(waste)")
+                init_pos = waste.center
                 break
             }
         }
@@ -46,6 +48,14 @@ class GameViewController: UIViewController {
         previous_pos = touch.location(in: self.view)
         
         selected_waste.center = CGPoint(x: selected_waste.center.x + delta_x, y: selected_waste.center.y + delta_y)
+        
+        for bin in bin_list {
+            if bin.frame.contains(touch.location(in: bin.superview)) {
+                bin.isHighlighted = true
+            } else {
+                bin.isHighlighted = false
+            }
+        }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -53,8 +63,13 @@ class GameViewController: UIViewController {
         guard let touch = touches.first else { return }
         if let waste = selected_waste {
             for bin in bin_list {
-                if bin.frame.intersects(waste.frame) {
-                    waste.isHidden = true
+                if bin.frame.contains(touch.preciseLocation(in: bin.superview)) {
+                    if bin.tag == waste.tag {
+                        waste.isHidden = true
+                    } else {
+                        waste.center = init_pos
+                    }
+                    bin.isHighlighted = false
                     break
                 }
             }
