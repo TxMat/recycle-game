@@ -132,7 +132,7 @@
         <!--The Game-->
         <scene sceneID="WwX-or-yBy">
             <objects>
-                <viewController id="dfd-Ah-Vcd" sceneMemberID="viewController">
+                <viewController id="dfd-Ah-Vcd" customClass="GameViewController" customModule="RecycleGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fed-lj-4it">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,20 +157,20 @@
                                 <rect key="frame" x="160" y="140" width="130" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coquille" translatesAutoresizingMaskIntoConstraints="NO" id="e6F-dX-k2L">
-                                <rect key="frame" x="115" y="316" width="132" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pasteque" translatesAutoresizingMaskIntoConstraints="NO" id="FXk-u3-eMf">
                                 <rect key="frame" x="255" y="247" width="103" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sachet" translatesAutoresizingMaskIntoConstraints="NO" id="MoV-LQ-Ct3">
-                                <rect key="frame" x="16" y="469" width="103" height="111"/>
+                                <rect key="frame" x="21" y="472" width="103" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telephone" translatesAutoresizingMaskIntoConstraints="NO" id="bbd-Ff-Fh4">
                                 <rect key="frame" x="274" y="441" width="103" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coquille" translatesAutoresizingMaskIntoConstraints="NO" id="e6F-dX-k2L">
+                                <rect key="frame" x="115" y="316" width="132" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -178,6 +178,17 @@
                         <color key="backgroundColor" red="0.75026593128598651" green="1" blue="0.76896742285723796" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="The Game" style="editor" id="IjT-yz-EXj"/>
+                    <connections>
+                        <outletCollection property="bin_list" destination="ec2-Vp-lhE" collectionClass="NSMutableArray" id="VkZ-BM-DbZ"/>
+                        <outletCollection property="waste_list" destination="lXl-rB-uGD" collectionClass="NSMutableArray" id="4j8-w8-Unn"/>
+                        <outletCollection property="bin_list" destination="A6k-gq-uXl" collectionClass="NSMutableArray" id="imT-WA-ros"/>
+                        <outletCollection property="bin_list" destination="fIy-9g-saH" collectionClass="NSMutableArray" id="Ezk-Ji-Ltn"/>
+                        <outletCollection property="waste_list" destination="MoV-LQ-Ct3" collectionClass="NSMutableArray" id="52o-Xi-rsw"/>
+                        <outletCollection property="waste_list" destination="bbd-Ff-Fh4" collectionClass="NSMutableArray" id="ns5-vu-KHY"/>
+                        <outletCollection property="waste_list" destination="e6F-dX-k2L" collectionClass="NSMutableArray" id="FE2-x7-Wla"/>
+                        <outletCollection property="waste_list" destination="FXk-u3-eMf" collectionClass="NSMutableArray" id="cL1-av-LW6"/>
+                        <outletCollection property="waste_list" destination="4AK-qM-t0G" collectionClass="NSMutableArray" id="yut-nm-QJW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCA-XS-HlR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

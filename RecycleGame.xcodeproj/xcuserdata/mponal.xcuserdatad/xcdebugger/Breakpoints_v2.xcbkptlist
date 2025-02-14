@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DCF62CD7-03F8-4965-84A6-FE7A64DC3816"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2C8D64A-A603-45C7-9969-102F4F44EEF2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RecycleGame/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "GameViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D2C8D64A-A603-45C7-9969-102F4F44EEF2 - 4748082ad878da7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RecycleGame.GameViewController.bin_list.getter : Swift.Optional&lt;Swift.Array&lt;__C.UIImageView&gt;&gt;"
+                  moduleName = "RecycleGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mponal/Documents/RecycleGame/RecycleGame/GameViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "D2C8D64A-A603-45C7-9969-102F4F44EEF2 - e8aa55e0aa2e4a0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RecycleGame.GameViewController.bin_list.setter : Swift.Optional&lt;Swift.Array&lt;__C.UIImageView&gt;&gt;"
+                  moduleName = "RecycleGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mponal/Documents/RecycleGame/RecycleGame/GameViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "D2C8D64A-A603-45C7-9969-102F4F44EEF2 - b9534a6d0ab844f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RecycleGame.GameViewController.bin_list.modify : Swift.Optional&lt;Swift.Array&lt;__C.UIImageView&gt;&gt;"
+                  moduleName = "RecycleGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mponal/Documents/RecycleGame/RecycleGame/GameViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12">
+               </Location>
+               <Location
+                  uuid = "D2C8D64A-A603-45C7-9969-102F4F44EEF2 - ece4f8a5c5ed837e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RecycleGame.GameViewController.bin_list.modify : Swift.Optional&lt;Swift.Array&lt;__C.UIImageView&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "RecycleGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mponal/Documents/RecycleGame/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "D2C8D64A-A603-45C7-9969-102F4F44EEF2 - b14a88d213b0cf69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RecycleGame.GameViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; RecycleGame.GameViewController"
+                  moduleName = "RecycleGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mponal/Documents/RecycleGame/RecycleGame/GameViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12">
+               </Location>
+               <Location
+                  uuid = "D2C8D64A-A603-45C7-9969-102F4F44EEF2 - b92a53239f0cac72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RecycleGame.GameViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;RecycleGame.GameViewController&gt;"
+                  moduleName = "RecycleGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mponal/Documents/RecycleGame/RecycleGame/GameViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
